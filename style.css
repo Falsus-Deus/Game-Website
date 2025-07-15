@@ -1,0 +1,164 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f0f0f0;
+  background-color: #0e0e0e;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #300000, #002244);
+  text-align: center;
+  padding: 2rem;
+  color: #fdfdfd;
+  border-bottom: 2px solid #111;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: #ff5555;
+  letter-spacing: 1px;
+}
+
+header .subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+/* Split Layout */
+.split-layout {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70vh;
+}
+
+.side {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.side h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  padding: 0.3rem 0;
+  font-weight: bold;
+}
+
+/* Hell */
+.hell {
+  background: linear-gradient(160deg, #1a0000, #4b0000);
+  color: #ff4444;
+  border-right: 2px solid #222;
+}
+
+.hell ul li::before {
+  content: "🔥 ";
+}
+
+/* Heaven */
+.heaven {
+  background: linear-gradient(200deg, #eaf6ff, #c0e0ff);
+  color: #1c1c1c;
+}
+
+.heaven ul li::before {
+  content: "✨ ";
+}
+
+/* Descriptions */
+.description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/* Screenshots */
+.screenshots {
+  background: #111;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.screenshots h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #333;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Release Date */
+.release {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  color: #dddddd;
+}
+
+.release h2 {
+  color: #ffcc00;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fff;
+}
+
